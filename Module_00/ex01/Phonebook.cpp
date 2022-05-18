@@ -60,6 +60,7 @@ void	Phonebook::search(void) {
 		n_char_of_str(this->tab[wich].search_data("firstname"));
 		n_char_of_str(this->tab[wich].search_data("lastname"));
 		n_char_of_str(this->tab[wich].search_data("nickname"));
+		std :: cout << std :: endl;
 	}
 	else
 		std :: cout << "Not a valable index" << std :: endl;

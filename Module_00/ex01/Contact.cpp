@@ -2,15 +2,15 @@
 #include "Phonebook_Class.hpp"
 #include <iostream>
 
+Contact::Contact() {}
+
 Contact::~Contact() {}
 
 void	Contact::set_data() {
 	std :: string data;
 	std :: cout << "First name : ";
 	std :: cin >> data;
-	std :: cout << data << std :: endl;
 	this->first_name = data;
-	std :: cout << "test" << std :: endl;
 	std :: cout << "Last name : ";
 	std :: cin >> data;
 	this->last_name = data;
