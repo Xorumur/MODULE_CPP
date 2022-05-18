@@ -7,6 +7,7 @@ int main (void) {
 
 	while (1) {
 		std :: string str;
+		std :: cout << "	: ";
 		std :: cin >> str;
 		if (str == "ADD")
 			repo.add();

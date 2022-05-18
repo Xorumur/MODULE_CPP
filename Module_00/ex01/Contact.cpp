@@ -2,6 +2,8 @@
 #include "Phonebook_Class.hpp"
 #include <iostream>
 
+Contact::~Contact() {}
+
 void	Contact::set_data() {
 	std :: string data;
 	std :: cout << "First name : ";

@@ -6,15 +6,17 @@
 
 Phonebook::Phonebook() {i = 0;} // std :: cout << "Get called" << std :: endl;}
 
+Phonebook::~Phonebook() {}
+
 void	Phonebook::add() {
 	this->tab[i++].set_data();
 }
 
 void	n_char_of_str(std :: string str) {
 	if (str.length() > 10) {
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 9; i++)
 			std :: cout << str[i];
-		}
+		std :: cout << ".";
 	}
 	else {
 		std :: cout << str;

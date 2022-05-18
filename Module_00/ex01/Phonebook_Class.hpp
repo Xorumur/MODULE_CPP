@@ -10,6 +10,7 @@ class Phonebook {
 		Contact	tab[8];
 	public :
 		Phonebook();
+		~Phonebook();
 		void	add();
 		void	search();
 };

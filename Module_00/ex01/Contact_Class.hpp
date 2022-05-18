@@ -11,6 +11,7 @@ class Contact {
 		std :: string phone;
 		std :: string secret;
 	public :
+		~Contact();
 		void set_data();
 		std :: string search_data(std :: string str);
 };
