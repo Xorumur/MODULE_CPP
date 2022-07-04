@@ -4,7 +4,9 @@ CXXFLAGS +=	-Wall -Wextra -Werror -std=c++98
 
 CXX =		clang++
 
-SRCS =		$(wildcard *.cpp)
+#SRCS =		$(wildcard *.cpp)
+
+SRCS  =		fixed_ope.cpp fixed.cpp main.cpp \
 
 OBJS =		$(SRCS:.cpp=.o)
 

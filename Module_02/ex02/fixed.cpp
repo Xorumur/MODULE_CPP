@@ -78,3 +78,30 @@ int	fixed::getRawBits( void ) const
 	return (this->stock);
 }
 
+fixed	fixed::max( fixed & lhs, fixed & rhs )
+{
+	if (lhs.getRawBits() > rhs.getRawBits())
+		return (lhs);
+	return (rhs);
+}
+
+fixed	fixed::min( fixed & lhs, fixed & rhs )
+{
+	if (lhs.getRawBits() < rhs.getRawBits())
+		return (lhs);
+	return (rhs);
+}
+
+fixed	fixed::max( const fixed & lhs, const fixed & rhs )
+{
+	if (lhs.getRawBits() > rhs.getRawBits())
+		return (lhs);
+	return (rhs);
+}
+
+fixed	fixed::min( const fixed & lhs, const fixed & rhs )
+{
+	if (lhs.getRawBits() < rhs.getRawBits())
+		return (lhs);
+	return (rhs);
+}
